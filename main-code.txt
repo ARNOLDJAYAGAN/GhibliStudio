@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farlight Updates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css">
+    <script defer src="palette.js"></script>
+</head>
+<body>
+    <div id="Home">
+    <header>
+        <img src="bunnies_png.png" alt="bunnies"></img>
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <ul class="navlist">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="gun">
+        <div class="gun-text">
+            <h5>#battle ground</h5>
+            <h2>Bar95</h2>
+            <h6>Ghibli Studio</h6>
+            <p>Make sure to subscribe so you can follow our updates!</p>
+            <a href="#Contact" class="play">Contact Me</a>
+        </div>
+        <div class="tororo">
+          <img src="tororo_png.png">
+        </div>
+    </section>
+</div>
+    <div class="icons">
+        <nav class="color-palette">
+            <button onclick="updateTheme()" class="theme default"></button>
+            <button onclick="updateTheme(LIGHT_THEME)" class="theme light"><i class="fa fa-day"></i></button>
+            <button onclick="updateTheme(DARK_THEME)" class="theme dark"><i class="fa fa-bars"></i></button>
+        </nav>
+    </div>
+    <section id="Contact">
+        <h1>You can reach me through</h1>
+        <p>shows guns comparison based on the farlight 84 gun's power</p>
+
+        <div class="row">
+            <div class="guns-col">
+                <h2>You can reach me through: </h4>
+                <h3 class="fb">Facebook</h3>
+                <p>The Bar95 is a SR Icon Sniper Rifle in Farlight 84.</p>
+                <img src="fb.png" alt="facebook">
+                <h3 class="insta">Instagram</h3>
+                <p>The Defender is a SR Icon Sniper Rifle in Farlight 84.</p>
+                <img src="insta.png" alt="instagram">
+                <h3 class="telephone">Phone Number</h3>
+                <p>The Stellar Wind is a SR Icon Sniper Rifle in Farlight 84.</p>
+                <img src="tp.png" alt="telephone#">
+               
+
+
+            </div>
+        </div>
+    </section>
+    <section id="About">
+        <h1>Hello !</h1>
+        <p>This website is inspired by</p>
+        <p class="highlight-t">Ghibli Studio</p>
+        <p>which promotes <br>tranquility, freedom, nature, and harmonious.</p>
+        
+        
+    
+        <div class="fire">
+            <div class="spark">
+                <p>My name is </p>
+                <p class="name">Arnold Jhon O. Jayagan</p>
+                <p>I am an </p>
+                <p class="course"><br>IT student</p>
+                <p>here at holy cross of davao</p>
+                <img src="fire_ghibli.png" alt="fire">
+    
+    
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+:root {
+    --bg-color: rgb(38, 66, 42);
+    --color: rgb(237, 255, 230);
+    --p-color: rgb(255, 255, 255);
+    --h1-color: rgb(42, 245, 110);
+    --button-color: rgb(23, 165, 23);
+}
+.light-theme {
+    --bg-color: rgb(255, 255, 255);
+    --color: rgb(0, 0, 0);
+    --p-color: rgb(5, 5, 5);
+    --h1-color: rgb(207, 241, 12);
+    --button-color: rgb(133, 153, 133);
+}
+.dark-theme {
+    --bg-color: rgb(0, 0, 0);
+    --color: rgb(70, 243, 243);
+    --p-color: rgb(255, 255, 255);
+    --h1-color: rgb(51, 38, 224);
+    --button-color: rgb(49, 25, 180);
+}
+.color-palette {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    float: left;
+    padding-left: 30px;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.color-palette button.theme {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(31, 3, 158);
+    cursor: pointer;
+
+}
+
+.theme.light {
+    background-color: rgb(255, 255, 255);
+}
+
+.theme.dark {
+    background-color: rgb(0, 0, 0);
+}
+
+.theme.default {
+    background-color: rgb(13, 255, 73);
+}
+body{
+    background: var(--bg-color);
+    background-repeat: no-repeat;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 9%;
+    background-color: rgb(9, 63, 13);
+}
+header img{
+    width: 200px;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    font-size: 15px;
+    color: rgb(248, 243, 243);
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    margin-left: 60px;
+}
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.gun{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+.gun-text h5{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: var(--color);
+}
+.gun-text h6{
+    color: var(--color);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 70px;
+    line-height: 1;
+    margin: 0 0 45px;
+}
+.gun-text h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color);
+    margin-bottom: 10px;
+}
+.gun-text p{
+    color: var(--color);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.tororo img{
+    width: 500px;
+    height: auto;
+}
+.gun-text a{
+    display: inline-block;
+    color: var(--color);
+    background: var(--button-color);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.gun-text a:hover{
+    background: transparent;
+    border: 1px solid transparent;
+    transform: translateX(8px);
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: rgb(235, 228, 228);
+    transition: all .50s ease;
+}
+#Contact{
+    text-align: center;
+    color: white;
+}
+#Contact h1{
+    font-size: 80px;
+}
+.row{
+    margin-top: 40%;
+    justify-content: space-between;
+
+}
+.guns-col{
+    flex-basis: 31%;
+    background: var(--button-color);
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 10px 10px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+.guns-col img{
+    width: 150px;
+    margin-right: 70%;
+
+}
+
+.fire img{
+    width: 500px;
+    float: right;
+}
+.spark{
+    justify-content: space-between;
+}
+
+/* IDs */
+#About {
+    margin-top: 20%;
+    height: 600px;
+}
+#Contact{
+    height: 600px;
+}
+#Home{
+    height: 600px;
+}
+.highlight-t {
+    color: var(--h1-color);
+}
+#About p {
+    display: inline;
+    font-size: 30px;
+}
+
+#About h1 {
+    font-size: 60px;
+    color: var(--h1-color);
+}
+.name{
+    color: var(--h1-color);
+}
+.course{
+    color: var(--h1-color);
+}
+.t-1, .t-2, .t-3, .t-4, .t-5{
+    color: var(--p-color);
+}
+.guns-col img, .fb{
+    display: inline-block;
+}
+
+/* IDs */
+
+/* Icon */
+.fb{
+    padding-top: 3%;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 16%;
+}
+.insta {
+    padding-top: 3%;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 20%;
+}
+
+.telephone {
+    padding-top: 3%;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 20%;
+}
+/* Icons */
+
+/* Card */
+
+
+
+
+/* Card */
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 1%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    .gun img{
+        width: 50%;
+        height: auto;
+        margin-left: 30%;
+        margin-bottom: 10%;
+    }
+    .gun-text h6{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .gun-text h2{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1086px) {
+    .gun img {
+        margin-bottom: 40%;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .gun-text{
+        padding-top: 115px;
+    }
+    .gun img{
+        text-align: center;
+    }
+    .gun img img{
+        width: 560px;
+        height: auto;
+    }
+    .gun {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons{
+        display: none;
+    }
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #97a199;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+       margin-left: 0;
+       display: block;
+       margin: 10px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    .gun img img{
+        width: 100%;
+        height: auto;
+    }
+}
